@@ -1,0 +1,7 @@
+syntax: glob
+*.o
+*.ali
+*~
+.config
+.config.sh
+remove_unwanted_headers
