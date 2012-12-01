@@ -1,0 +1,5 @@
+project AUJ_Tools is
+   for Main use ("count_lines",
+                 "remove_unwanted_headers",
+                 "reorder_headers");
+end AUJ_Tools;

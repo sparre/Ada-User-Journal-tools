@@ -4,4 +4,7 @@ syntax: glob
 *~
 .config
 .config.sh
+
+count_lines
 remove_unwanted_headers
+reorder_headers
