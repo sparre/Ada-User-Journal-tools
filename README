@@ -1,17 +1,19 @@
-Ada User Journal tools
-======================
+Ada User Journal tools [1]
+==========================
 
 A few small text processing applications I use when editing the news section
-for Ada User Journal [1].
+for Ada User Journal [2].
 
 Links:
 ------
 
-[1] Ada User Journal:
+[1] Ada User Journal tools (source text repository):
+    http://repositories.jacob-sparre.dk/ada-user-journal-tools
+[2] Ada User Journal:
     http://www.ada-europe.org/auj/
-[2] Free Ada Tools and Libraries:
+[3] Free Ada Tools and Libraries:
     http://www.adaic.org/ada-resources/tools-libraries/
-[3] My repositories on Bitbucket:
+[4] My repositories on Bitbucket:
     http://repositories.jacob-sparre.dk/
-[4] My web site:
+[5] My web site:
     http://www.jacob-sparre.dk/
