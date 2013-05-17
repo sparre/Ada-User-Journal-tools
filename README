@@ -5,6 +5,14 @@ A few small text processing applications I use when editing the news section
 for Ada User Journal [2].
 
 
+Building:
+---------
+
+You can build the tools using (GNU) make:
+
+   make build
+
+
 Links:
 ------
 

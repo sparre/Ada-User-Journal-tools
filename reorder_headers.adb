@@ -8,7 +8,6 @@ with
 procedure Reorder_Headers is
    type Headlines is (From, Date, Subject, Source);
    
-   overriding
    function "=" (Left, Right : String) return Boolean is
       use Ada.Characters.Handling;
    begin
