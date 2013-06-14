@@ -34,7 +34,7 @@ begin
 
    case Previous_Line is
       when Empty =>
-         Put (Item => (Empty_Lines    ) / 2 + Actual_Lines, Width => 0);
+         Put (Item => (Empty_Lines)     / 2 + Actual_Lines, Width => 0);
       when With_Content =>
          Put (Item => (Empty_Lines + 1) / 2 + Actual_Lines, Width => 0);
    end case;

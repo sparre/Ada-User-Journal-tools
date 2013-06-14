@@ -6,11 +6,11 @@ with
   Ada.Strings.Unbounded.Text_IO;
 
 procedure Remove_Unwanted_Headers is
-   function Is_Whitespace (Item : in Character) return Boolean is
-      use Ada.Characters.Handling, Ada.Characters.Latin_1;
-   begin
-      return Is_Control (Item) or Item = ' ' or Item = NBSP;
-   end Is_Whitespace;
+   function Is_Whitespace (Item : in Character) return Boolean;
+
+   function "=" (Left  : Ada.Strings.Unbounded.Unbounded_String;
+                 Right : String) return Boolean;
+   --  Case insensitive string comparison.
 
    function "=" (Left  : Ada.Strings.Unbounded.Unbounded_String;
                  Right : String) return Boolean is
@@ -18,6 +18,12 @@ procedure Remove_Unwanted_Headers is
    begin
       return To_Lower (To_String (Left)) = To_Lower (Right);
    end "=";
+
+   function Is_Whitespace (Item : in Character) return Boolean is
+      use Ada.Characters.Handling, Ada.Characters.Latin_1;
+   begin
+      return Is_Control (Item) or Item in ' ' | NBSP;
+   end Is_Whitespace;
 
    use
      Ada.Characters.Handling,

@@ -1,5 +1,9 @@
+with "ada_2012";
+
 project AUJ_Tools is
    for Main use ("count_lines",
                  "remove_unwanted_headers",
                  "reorder_headers");
+
+   package Compiler renames Ada_2012.Compiler;
 end AUJ_Tools;
