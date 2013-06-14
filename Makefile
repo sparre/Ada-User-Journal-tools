@@ -1,5 +1,17 @@
+GENERATED_EXECUTABLES=count_lines remove_unwanted_headers reorder_headers
+
+EXECUTABLES=$(GENERATED_EXECUTABLES)
+
 build:
-	gnatmake -Pauj_tools
+	gnatmake -P auj_tools
 
 install: build
-	cp -p $$(find . -maxdepth 1 -type f -perm -ugo=x) ${HOME}/bin/
+	install -t ${HOME}/bin/ $(EXECUTABLES)
+
+clean:
+	gnatclean -P auj_tools
+	rm -f *.o *.ali
+
+distclean: clean
+	rm -f $(GENERATED_EXECUTABLES)
+
