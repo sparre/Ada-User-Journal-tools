@@ -1,5 +1,12 @@
+--  O mighty Emacs, please use -*- Ada -*- mode in this lowly file.
+
 abstract project Ada_2012 is
    for Source_Dirs use ();
+
+   package Builder is
+      for Default_Switches ("Ada")
+        use ("-m");
+   end Builder;
 
    package Compiler is
       for Default_Switches ("Ada")
@@ -12,8 +19,7 @@ abstract project Ada_2012 is
              "-gnaty3abcdefhiklmnoOprstux", --  Style checks
              "-gnatwe",                     --  Treat warnings as errors
              "-gnat2012",                   --  Use Ada 2012
-             "-Wall",
-             "-O2",                         --  Optimise (level 2/3)
-             "-g");
+             "-Wall",                       --  All GCC warnings
+             "-O2");                        --  Optimise (level 2/3)
    end Compiler;
 end Ada_2012;
