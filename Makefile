@@ -5,6 +5,9 @@ EXECUTABLES=$(GENERATED_EXECUTABLES)
 build:
 	gnatmake -P auj_tools
 
+test: build
+	@echo No testing implemented yet.
+
 install: build
 	install -t ${HOME}/bin/ $(EXECUTABLES)
 
