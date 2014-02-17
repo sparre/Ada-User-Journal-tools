@@ -63,6 +63,8 @@ begin
                                              Field = "Date:" or else
                                              Field = "Newsgroups:" or else
                                              Field = "URL:" or else
+                                             Field = "IRC-network:" or else
+                                             Field = "IRC-channel:" or else
                                              Field = "To:" or else
                                              Field = "Cc:" or else
                                              Field = "Bcc:" then
