@@ -22,7 +22,7 @@ procedure Remove_Unwanted_Headers is
    function Is_Whitespace (Item : in Character) return Boolean is
       use Ada.Characters.Handling, Ada.Characters.Latin_1;
    begin
-      return Is_Control (Item) or Item in ' ' | NBSP;
+      return Is_Control (Item) or Item = ' ' or Item = NBSP;
    end Is_Whitespace;
 
    use
