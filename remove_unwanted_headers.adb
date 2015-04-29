@@ -67,7 +67,8 @@ begin
                                              Field = "IRC-channel:" or else
                                              Field = "To:" or else
                                              Field = "Cc:" or else
-                                             Field = "Bcc:" then
+                                             Field = "Bcc:"
+               then
                   Put_Line (Line);
                else
                   Put_Line (Standard_Error, Line);

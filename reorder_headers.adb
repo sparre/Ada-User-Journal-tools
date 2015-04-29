@@ -56,7 +56,8 @@ procedure Reorder_Headers is
                                          Item = "To:" or else
                                          Item = "Cc:" or else
                                          Item = "Bcc:" or else
-                                         Item = "IRC-network:" then
+                                         Item = "IRC-network:"
+      then
          return Source;
       else
          Ada.Text_IO.Put_Line
