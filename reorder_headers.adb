@@ -68,7 +68,6 @@ procedure Reorder_Headers is
    end Value;
 
    use
-     Ada.Characters.Handling,
      Ada.Text_IO,
      Ada.Strings.Unbounded,
      Ada.Strings.Unbounded.Text_IO;

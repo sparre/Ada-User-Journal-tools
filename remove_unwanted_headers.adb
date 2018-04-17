@@ -26,7 +26,6 @@ procedure Remove_Unwanted_Headers is
    end Is_Whitespace;
 
    use
-     Ada.Characters.Handling,
      Ada.Text_IO,
      Ada.Strings.Unbounded,
      Ada.Strings.Unbounded.Text_IO;
